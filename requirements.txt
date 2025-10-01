@@ -1,0 +1,12 @@
+pip
+setuptools
+wheel
+loguru
+python-dotenv
+numpy
+pandas
+matplotlib
+seaborn
+PyQt6; sys_platform != "win32"
+kafka-python-ng
+six
