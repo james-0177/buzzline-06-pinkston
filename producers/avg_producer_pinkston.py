@@ -1,5 +1,5 @@
 """
-age_producer_pinkston.py
+avg_producer_pinkston.py
 
 Stream numeric data to a Kafka topic.
 
@@ -44,14 +44,14 @@ load_dotenv()
 
 def get_kafka_topic() -> str:
     """Fetch Kafka topic from environment or use default."""
-    topic = os.getenv("AGE_TOPIC", "unknown_topic")
+    topic = os.getenv("AVG_TOPIC", "unknown_topic")
     logger.info(f"Kafka topic: {topic}")
     return topic
 
 
 def get_message_interval() -> int:
     """Fetch message interval from environment or use default."""
-    interval = int(os.getenv("AGE_INTERVAL_SECONDS", 1))
+    interval = int(os.getenv("AVG_INTERVAL_SECONDS", 1))
     logger.info(f"Message interval: {interval} seconds")
     return interval
 
@@ -70,50 +70,68 @@ DATA_FOLDER = PROJECT_ROOT.joinpath("data")
 logger.info(f"Data folder: {DATA_FOLDER}")
 
 # Set the name of the data file
-DATA_FILE = DATA_FOLDER.joinpath("age_le.csv")
-logger.info(f"Data file: {DATA_FILE}")
+DATA_FILE = DATA_FOLDER.joinpath("avg_le.csv")
+FEMALE_FILE = DATA_FOLDER.joinpath("female_le.csv")
+MALE_FILE = DATA_FOLDER.joinpath("male_le.csv")
+logger.info(f"Total Average Data file: {DATA_FILE}")
+logger.info(f"Female Data file: {FEMALE_FILE}")
+logger.info(f"Male Data file: {MALE_FILE}")
 
 #####################################
 # Message Generator
 #####################################
 
 
-def generate_messages(file_path: pathlib.Path):
+def generate_messages():
     """
-    Read from a csv file and yield records one by one, until the file is read.
+    Read from three csv files and yield records one by one, until the file is read.
 
     Args:
-        file_path (pathlib.Path): Path to the CSV file.
+        total_file (pathlib.Path): Path to avg_le.csv
+        female_file (pathlib.Path): Path to female_le.csv
+        male_file (pathlib.Path): Path to male_le.csv
 
     Yields:
-        str: CSV row formatted as a string.
+        dict: JSON-ready message with year, total, female, and male ages.
     """
     try:
-        logger.info(f"Opening data file in read mode: {DATA_FILE}")
-        with open(DATA_FILE, "r") as csv_file:
-            logger.info(f"Reading data from file: {DATA_FILE}")
+        logger.info(f"Opening total data file: {DATA_FILE}")
+        logger.info(f"Opening female date file: {FEMALE_FILE}")
+        logger.info(f"Opening male data file: {MALE_FILE}")
 
-            csv_reader = csv.DictReader(csv_file)
-            for row in csv_reader:
-                # Ensure required fields are present
-                if "year" not in row or "age" not in row:
-                    logger.error(f"Missing 'year' or 'age' column in row: {row}")
+        with open(DATA_FILE, "r") as t_file, \
+            open(FEMALE_FILE, "r") as f_file, \
+            open(MALE_FILE, "r") as m_file:
+        
+            total_reader = csv.DictReader(t_file)
+            female_reader = csv.DictReader(f_file)
+            male_reader = csv.DictReader(m_file)
+
+            for total_row, female_row, male_row in zip(total_reader, female_reader, male_reader):
+                if "year" not in total_row or "age" not in total_row:
+                    logger.error(f"Missing 'year' or 'age' in total row: {total_row}")
+                    continue
+                if "year" not in female_row or "age" not in female_row:
+                    logger.error(f"Missing 'year' or 'age' in female row: {female_row}")
+                    continue
+                if "year" not in male_row or "age" not in male_row:
+                    logger.error(f"Missing 'year' or 'age' in male row: {male_row}")
                     continue
 
-                # Prepare the message
-                message = {
-                    "year": int(row["year"]),
-                    "age": float(row["age"]),
+                yield {
+                    "year": int(total_row["year"]),
+                    "total": float(total_row["age"]),
+                    "female": float(female_row["age"]),
+                    "male": float(male_row["age"])
                 }
-                logger.debug(f"Generated message: {message}")
-                yield message
-    except FileNotFoundError:
-        logger.error(f"File not found: {file_path}. Exiting.")
+                    
+        
+    except FileNotFoundError as e:
+        logger.error(f"File not found: {e.filename}. Exiting.")
         sys.exit(1)
     except Exception as e:
         logger.error(f"Unexpected error in message generation: {e}")
         sys.exit(3)
-
 
 #####################################
 # Define main function for this module.
@@ -136,10 +154,11 @@ def main():
     topic = get_kafka_topic()
     interval_secs = get_message_interval()
 
-    # Verify the data file exists
-    if not DATA_FILE.exists():
-        logger.error(f"Data file not found: {DATA_FILE}. Exiting.")
-        sys.exit(1)
+    # Verify the data files exists
+    for file_path in [DATA_FILE, FEMALE_FILE, MALE_FILE]:
+        if not file_path.exists():
+            logger.error(f"Data file not found: {file_path}. Exiting.")
+            sys.exit(1)
 
     # Create the Kafka producer
     producer = create_kafka_producer(
@@ -160,7 +179,7 @@ def main():
     # Generate and send messages
     logger.info(f"Starting message production to topic '{topic}'...")
     try:
-        for csv_message in generate_messages(DATA_FILE):
+        for csv_message in generate_messages():
             producer.send(topic, value=csv_message)
             logger.info(f"Sent message to topic '{topic}': {csv_message}")
             time.sleep(interval_secs)
