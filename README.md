@@ -1,12 +1,17 @@
 # buzzline-06-pinkston
 
-The goal of this project is to analyze Average U.S. Life Expectancy from 1900 - 2018 and visualize that data on a live chart. It will also breakdown the average life expectancy by gender and compare those breakdowns to the total average.
+The goal of this project is to analyze Average U.S. Life Expectancy from 1900 - 2018 and visualize that data on a live chart. It will also break down the average life expectancy by gender and compare those break downs to the total average.
 
-The project uses a producer script to load data from three CSV files, converts the data into JSON messages, and then stores them in a Kafka topic. A consumer script reads the topic, extracts the messages, and then renders the data on a live-updating chart.
+The project uses a producer script to load data from three CSV files, converts the data into JSON messages, and then stores them in a Kafka topic. A consumer script reads the JSON topic, extracts the messages, and then renders the data on a live-updating chart.
+
+The JSON messages will look like this:
+```
+{'year': 1900, 'total': 47.3, 'female': 48.3, 'male': 46.3}
+```
 
 This project requires the use of GitHub, Python 3.11, VS Code, Apache Kafka, and WSL (if using a Windows machine). It is assumed that the user already has a GitHub account, and that their machine is setup to run and process Python projects/code through VS Code and that Apache Kafka is also setup to run.
 
-The expected outcome is to have a combo bar/line chart that updates live as data is read into it.
+The expected outcome is to have a combo bar/line chart that updates live as data is read into it. There is also a periodic analytics report that will be displayed every decade (1910, 1920, 1930...).
 
 ## Copy this Project
 
@@ -16,7 +21,7 @@ The expected outcome is to have a combo bar/line chart that updates live as data
 
 ## Task 1. Start Kafka (using WSL if on a Windows machine)
 
-If Windows, open a PowerShell terminal in VS Code:
+If Windows, open a PowerShell terminal in VS Code and enter the following command:
 
 ```powershell
 wsl
@@ -88,3 +93,20 @@ python3 -m consumers.avg_consumer_pinkston
 ## Stop the Continuous Process
 
 To kill the terminal, press CTRL + C. This works in the powershell/bash terminals as well as the WSL terminal.
+
+## Look for the Periodic Analytics Report
+
+There is a periodic analytics report that runs in the Consumer terminal every decade (1910, 1920, 1930...). As such, it is best viewed if the Consumer terminal is not split.
+
+The analytics report will look like this:
+```
+==================================================
+📊 DECADE REPORT: 1900-1909
+--------------------------------------------------
+Avg. Life Expectancy: Total = 49.5, Female = 51.2, Male = 47.9
+Lowest Life Expectancy: 1900 (Total = 47.3, Female = 48.3, Male = 46.3)
+Highest Life Expectancy: 1909 (Total = 52.1, Female = 53.8, Male = 50.5)
+Gender Gap (Avg.): 3.2 years
+⚠️  Significant drop(s) detected in year(s): 1904, 1910
+==================================================
+```

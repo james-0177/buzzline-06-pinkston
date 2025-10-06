@@ -17,11 +17,6 @@ Example Kafka message format:
 import os
 import json  # handle JSON parsing
 
-# Use a deque ("deck") - a double-ended queue data structure
-# A deque is a good way to monitor a certain number of "most recent" messages
-# A deque is a great data structure for time windows (e.g. the last 5 messages)
-from collections import deque
-
 # Import external packages
 from dotenv import load_dotenv
 
@@ -36,6 +31,7 @@ from utils.utils_consumer import create_kafka_consumer
 from utils.utils_logger import logger
 from matplotlib.patches import Patch
 from matplotlib.lines import Line2D
+from statistics import mean
 
 #####################################
 # Load Environment Variables
@@ -70,6 +66,16 @@ years = []  # To store year for the x-axis
 total_ages = []  # To store age readings for the y-axis
 female_ages = [] # To store female age readings for the y-axis
 male_ages = [] # To store male age readings for the y-axis
+
+
+#########################################
+# Variables for Periodic Analytics Report
+#########################################
+
+DECADE_BLOCK = 10
+decade_data = []
+current_block_start = 1900
+
 
 #####################################
 # Set up live visuals
@@ -126,7 +132,7 @@ def update_chart():
     # Use the built-in axes methods to set the labels and title
     ax.set_xlabel("Year")
     ax.set_ylabel("Age")
-    ax.set_title("Average Life Expectancy: 1900 - 2018 by James Pinkston")
+    ax.set_title("Average U.S. Life Expectancy: 1900 - 2018 by James Pinkston")
 
     # Rotate x-axis label for readability
     plt.xticks(rotation=45)
@@ -161,12 +167,66 @@ def update_chart():
     plt.pause(0.01)  
 
 
-#####################################
+#######################################
+# Periodic Decade Analytics Report
+#######################################
+
+
+def periodic_report(block, start_year, end_year):
+    """
+    Prints analytics for one full decade block.
+    """
+    totals = [d['total'] for d in block]
+    females = [d['female'] for d in block]
+    males = [d['male'] for d in block]
+
+    avg_total = mean(totals)
+    avg_female = mean(females)
+    avg_male = mean(males)
+    gender_gap = avg_female - avg_male
+
+    lowest = min(block, key=lambda d: d['total'])
+    highest = max(block, key=lambda d: d['total'])
+
+    drops = []
+    for prev, curr in zip(block, block[1:]):
+        if prev['total'] - curr['total'] > 2:
+            drops.append(curr['year'])
+
+    RED = "\033[91m"
+    RESET = "\033[0m"
+
+    # print(f"\n=== Period: {start_year}-{end_year} ===")
+    print("\n" + "=" * 50)
+    print(f"📊 DECADE REPORT: {start_year}-{end_year}")
+    print("-" * 50)
+    print(f"Avg. Life Expectancy: Total = {avg_total:.1f}, "
+          f"Female = {avg_female:.1f}, Male = {avg_male:.1f}")
+    print(f"Lowest Life Expectancy: {lowest['year']} "
+          f"(Total = {lowest['total']:.1f}, "
+          f"Female = {lowest['female']:.1f}, "
+          f"Male = {lowest['male']:.1f})"
+          f"{RED + '⚠️' + RESET if lowest['year'] in drops else ''}")
+    print(f"Highest Life Expectancy: {highest['year']} "
+          f"(Total = {highest['total']:.1f}, "
+          f"Female = {highest['female']:.1f}, "
+          f"Male = {highest['male']:.1f})")
+    print(f"Gender Gap (Avg.): {gender_gap:.1f} years")
+
+    if drops:
+        print(RED + f"⚠️  Significant drop(s) detected in year(s): {', '.join(map(str, drops))}" + RESET)
+
+    # print("========================================\n")
+    print("=" * 50 + "\n")
+
+
+#######################################
 # Function to process a single message
 # #####################################
 
 
 def process_message(message: str) -> None:
+    global decade_data, current_block_start
     """
     Process a JSON-transferred CSV message.
 
@@ -201,7 +261,23 @@ def process_message(message: str) -> None:
         # Update chart after processing this message
         update_chart()
 
-        
+        # Decade report tracking
+        decade_data.append({
+            'year': year,
+            'total': total,
+            'female': female,
+            'male': male
+        })
+
+        # If we've reached the end of a decade (e.g., 1910, 1920, 1930...)
+        if (year - current_block_start) == DECADE_BLOCK:
+            # Print the report for this finished decade
+            periodic_report(decade_data, current_block_start, year - 1)
+
+            # Reset for the next decade block
+            decade_data.clear()
+            current_block_start = year
+            
     except json.JSONDecodeError as e:
         logger.error(f"JSON decoding error for message '{message}': {e}")
     except Exception as e:

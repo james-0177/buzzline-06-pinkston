@@ -1,0 +1,480 @@
+2025-10-05 19:23:06 | INFO | Sent message to topic 'avg_csv': {'year': 1900, 'total': 47.3, 'female': 48.3, 'male': 46.3}
+2025-10-05 19:23:11 | INFO | Sent message to topic 'avg_csv': {'year': 1901, 'total': 49.1, 'female': 50.6, 'male': 47.6}
+2025-10-05 19:23:15 | INFO | Logging to file: logs/project_log.log
+2025-10-05 19:23:15 | INFO | Log sanitization enabled, personal info removed
+2025-10-05 19:23:15 | INFO | START consumer.
+2025-10-05 19:23:15 | INFO | Kafka topic: avg_csv
+2025-10-05 19:23:15 | INFO | Kafka consumer group id: avg_group
+2025-10-05 19:23:15 | INFO | Consumer: Topic 'avg_csv' and group 'avg_group'...
+2025-10-05 19:23:15 | INFO | Kafka broker address: localhost:9092
+2025-10-05 19:23:15 | INFO | Creating Kafka consumer. Topic='avg_csv' and group ID='avg_group'.
+2025-10-05 19:23:15 | INFO | Kafka consumer created successfully.
+2025-10-05 19:23:15 | INFO | Polling messages from topic 'avg_csv'...
+2025-10-05 19:23:15 | ERROR | Error while consuming messages: Invalid file descriptor: -1
+2025-10-05 19:23:15 | INFO | Kafka consumer for topic 'avg_csv' closed.
+2025-10-05 19:23:16 | INFO | Sent message to topic 'avg_csv': {'year': 1902, 'total': 51.5, 'female': 53.4, 'male': 49.8}
+2025-10-05 19:23:21 | INFO | Sent message to topic 'avg_csv': {'year': 1903, 'total': 50.5, 'female': 52.0, 'male': 49.1}
+2025-10-05 19:23:25 | WARNING | Producer interrupted by user.
+2025-10-05 19:23:25 | INFO | Kafka producer closed.
+2025-10-05 19:23:25 | INFO | END producer.
+2025-10-05 19:23:39 | INFO | Logging to file: logs/project_log.log
+2025-10-05 19:23:39 | INFO | Log sanitization enabled, personal info removed
+2025-10-05 19:23:39 | INFO | Project root: PROJECT_ROOT
+2025-10-05 19:23:39 | INFO | Data folder: PROJECT_ROOT/data
+2025-10-05 19:23:39 | INFO | Total Average Data file: PROJECT_ROOT/data/avg_le.csv
+2025-10-05 19:23:39 | INFO | Female Data file: PROJECT_ROOT/data/female_le.csv
+2025-10-05 19:23:39 | INFO | Male Data file: PROJECT_ROOT/data/male_le.csv
+2025-10-05 19:23:39 | INFO | START producer.
+2025-10-05 19:23:39 | INFO | Kafka broker address: localhost:9092
+2025-10-05 19:23:40 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'hMNex-8bR3emkYlz6xmmZg', 'controller_id': 1}
+2025-10-05 19:23:40 | INFO | Kafka topic: avg_csv
+2025-10-05 19:23:40 | INFO | Message interval: 5 seconds
+2025-10-05 19:23:40 | INFO | Kafka broker address: localhost:9092
+2025-10-05 19:23:40 | INFO | Connecting to Kafka broker at localhost:9092...
+2025-10-05 19:23:40 | INFO | Kafka producer successfully created.
+2025-10-05 19:23:40 | INFO | Kafka broker address: localhost:9092
+2025-10-05 19:23:40 | INFO | Topic 'avg_csv' already exists. Recreating fresh...
+2025-10-05 19:23:40 | INFO | Requested deletion of topic 'avg_csv'.
+2025-10-05 19:23:40 | INFO | Topic 'avg_csv' created successfully.
+2025-10-05 19:23:40 | INFO | Kafka topic 'avg_csv' is ready.
+2025-10-05 19:23:40 | INFO | Starting message production to topic 'avg_csv'...
+2025-10-05 19:23:40 | INFO | Opening total data file: PROJECT_ROOT/data/avg_le.csv
+2025-10-05 19:23:40 | INFO | Opening female date file: PROJECT_ROOT/data/female_le.csv
+2025-10-05 19:23:40 | INFO | Opening male data file: PROJECT_ROOT/data/male_le.csv
+2025-10-05 19:23:40 | INFO | Sent message to topic 'avg_csv': {'year': 1900, 'total': 47.3, 'female': 48.3, 'male': 46.3}
+2025-10-05 19:23:45 | INFO | Sent message to topic 'avg_csv': {'year': 1901, 'total': 49.1, 'female': 50.6, 'male': 47.6}
+2025-10-05 19:23:49 | INFO | Logging to file: logs/project_log.log
+2025-10-05 19:23:49 | INFO | Log sanitization enabled, personal info removed
+2025-10-05 19:23:49 | INFO | START consumer.
+2025-10-05 19:23:49 | INFO | Kafka topic: avg_csv
+2025-10-05 19:23:49 | INFO | Kafka consumer group id: avg_group
+2025-10-05 19:23:49 | INFO | Consumer: Topic 'avg_csv' and group 'avg_group'...
+2025-10-05 19:23:49 | INFO | Kafka broker address: localhost:9092
+2025-10-05 19:23:49 | INFO | Creating Kafka consumer. Topic='avg_csv' and group ID='avg_group'.
+2025-10-05 19:23:49 | INFO | Kafka consumer created successfully.
+2025-10-05 19:23:49 | INFO | Polling messages from topic 'avg_csv'...
+2025-10-05 19:23:50 | INFO | Sent message to topic 'avg_csv': {'year': 1902, 'total': 51.5, 'female': 53.4, 'male': 49.8}
+2025-10-05 19:23:52 | INFO | Processed JSON message: {'year': 1900, 'total': 47.3, 'female': 48.3, 'male': 46.3}
+2025-10-05 19:23:52 | INFO | Processed JSON message: {'year': 1901, 'total': 49.1, 'female': 50.6, 'male': 47.6}
+2025-10-05 19:23:52 | INFO | Processed JSON message: {'year': 1902, 'total': 51.5, 'female': 53.4, 'male': 49.8}
+2025-10-05 19:23:55 | INFO | Sent message to topic 'avg_csv': {'year': 1903, 'total': 50.5, 'female': 52.0, 'male': 49.1}
+2025-10-05 19:23:55 | INFO | Processed JSON message: {'year': 1903, 'total': 50.5, 'female': 52.0, 'male': 49.1}
+2025-10-05 19:24:00 | INFO | Sent message to topic 'avg_csv': {'year': 1904, 'total': 47.6, 'female': 49.1, 'male': 46.2}
+2025-10-05 19:24:00 | INFO | Processed JSON message: {'year': 1904, 'total': 47.6, 'female': 49.1, 'male': 46.2}
+2025-10-05 19:24:05 | INFO | Sent message to topic 'avg_csv': {'year': 1905, 'total': 48.7, 'female': 50.2, 'male': 47.3}
+2025-10-05 19:24:05 | INFO | Processed JSON message: {'year': 1905, 'total': 48.7, 'female': 50.2, 'male': 47.3}
+2025-10-05 19:24:10 | INFO | Sent message to topic 'avg_csv': {'year': 1906, 'total': 48.7, 'female': 50.8, 'male': 46.9}
+2025-10-05 19:24:10 | INFO | Processed JSON message: {'year': 1906, 'total': 48.7, 'female': 50.8, 'male': 46.9}
+2025-10-05 19:24:15 | INFO | Sent message to topic 'avg_csv': {'year': 1907, 'total': 47.6, 'female': 49.9, 'male': 45.6}
+2025-10-05 19:24:15 | INFO | Processed JSON message: {'year': 1907, 'total': 47.6, 'female': 49.9, 'male': 45.6}
+2025-10-05 19:24:20 | INFO | Sent message to topic 'avg_csv': {'year': 1908, 'total': 51.1, 'female': 52.8, 'male': 49.5}
+2025-10-05 19:24:20 | INFO | Processed JSON message: {'year': 1908, 'total': 51.1, 'female': 52.8, 'male': 49.5}
+2025-10-05 19:24:25 | INFO | Sent message to topic 'avg_csv': {'year': 1909, 'total': 52.1, 'female': 53.8, 'male': 50.5}
+2025-10-05 19:24:25 | INFO | Processed JSON message: {'year': 1909, 'total': 52.1, 'female': 53.8, 'male': 50.5}
+2025-10-05 19:24:30 | INFO | Sent message to topic 'avg_csv': {'year': 1910, 'total': 50.0, 'female': 51.8, 'male': 48.4}
+2025-10-05 19:24:30 | INFO | Processed JSON message: {'year': 1910, 'total': 50.0, 'female': 51.8, 'male': 48.4}
+2025-10-05 19:24:35 | INFO | Sent message to topic 'avg_csv': {'year': 1911, 'total': 52.6, 'female': 54.4, 'male': 50.9}
+2025-10-05 19:24:35 | INFO | Processed JSON message: {'year': 1911, 'total': 52.6, 'female': 54.4, 'male': 50.9}
+2025-10-05 19:24:40 | INFO | Sent message to topic 'avg_csv': {'year': 1912, 'total': 53.5, 'female': 55.9, 'male': 51.5}
+2025-10-05 19:24:40 | INFO | Processed JSON message: {'year': 1912, 'total': 53.5, 'female': 55.9, 'male': 51.5}
+2025-10-05 19:24:45 | INFO | Sent message to topic 'avg_csv': {'year': 1913, 'total': 52.5, 'female': 55.0, 'male': 50.3}
+2025-10-05 19:24:45 | INFO | Processed JSON message: {'year': 1913, 'total': 52.5, 'female': 55.0, 'male': 50.3}
+2025-10-05 19:24:50 | INFO | Sent message to topic 'avg_csv': {'year': 1914, 'total': 54.2, 'female': 56.8, 'male': 52.0}
+2025-10-05 19:24:50 | INFO | Processed JSON message: {'year': 1914, 'total': 54.2, 'female': 56.8, 'male': 52.0}
+2025-10-05 19:24:55 | INFO | Sent message to topic 'avg_csv': {'year': 1915, 'total': 54.5, 'female': 56.8, 'male': 52.5}
+2025-10-05 19:24:55 | INFO | Processed JSON message: {'year': 1915, 'total': 54.5, 'female': 56.8, 'male': 52.5}
+2025-10-05 19:25:00 | INFO | Sent message to topic 'avg_csv': {'year': 1916, 'total': 51.7, 'female': 54.3, 'male': 49.6}
+2025-10-05 19:25:00 | INFO | Processed JSON message: {'year': 1916, 'total': 51.7, 'female': 54.3, 'male': 49.6}
+2025-10-05 19:25:05 | INFO | Sent message to topic 'avg_csv': {'year': 1917, 'total': 50.9, 'female': 54.0, 'male': 48.4}
+2025-10-05 19:25:05 | INFO | Processed JSON message: {'year': 1917, 'total': 50.9, 'female': 54.0, 'male': 48.4}
+2025-10-05 19:25:10 | INFO | Sent message to topic 'avg_csv': {'year': 1918, 'total': 39.1, 'female': 42.2, 'male': 36.6}
+2025-10-05 19:25:10 | INFO | Processed JSON message: {'year': 1918, 'total': 39.1, 'female': 42.2, 'male': 36.6}
+2025-10-05 19:25:15 | INFO | Sent message to topic 'avg_csv': {'year': 1919, 'total': 54.7, 'female': 56.0, 'male': 53.5}
+2025-10-05 19:25:15 | INFO | Processed JSON message: {'year': 1919, 'total': 54.7, 'female': 56.0, 'male': 53.5}
+2025-10-05 19:25:20 | INFO | Sent message to topic 'avg_csv': {'year': 1920, 'total': 54.1, 'female': 54.6, 'male': 53.6}
+2025-10-05 19:25:20 | INFO | Processed JSON message: {'year': 1920, 'total': 54.1, 'female': 54.6, 'male': 53.6}
+2025-10-05 19:25:25 | INFO | Sent message to topic 'avg_csv': {'year': 1921, 'total': 60.8, 'female': 61.8, 'male': 60.0}
+2025-10-05 19:25:25 | INFO | Processed JSON message: {'year': 1921, 'total': 60.8, 'female': 61.8, 'male': 60.0}
+2025-10-05 19:25:30 | INFO | Sent message to topic 'avg_csv': {'year': 1922, 'total': 59.6, 'female': 61.0, 'male': 58.4}
+2025-10-05 19:25:30 | INFO | Processed JSON message: {'year': 1922, 'total': 59.6, 'female': 61.0, 'male': 58.4}
+2025-10-05 19:25:35 | INFO | Sent message to topic 'avg_csv': {'year': 1923, 'total': 57.2, 'female': 58.5, 'male': 56.1}
+2025-10-05 19:25:35 | INFO | Processed JSON message: {'year': 1923, 'total': 57.2, 'female': 58.5, 'male': 56.1}
+2025-10-05 19:25:40 | INFO | Sent message to topic 'avg_csv': {'year': 1924, 'total': 59.7, 'female': 61.5, 'male': 58.1}
+2025-10-05 19:25:40 | INFO | Processed JSON message: {'year': 1924, 'total': 59.7, 'female': 61.5, 'male': 58.1}
+2025-10-05 19:25:45 | INFO | Sent message to topic 'avg_csv': {'year': 1925, 'total': 59.0, 'female': 60.6, 'male': 57.6}
+2025-10-05 19:25:45 | INFO | Processed JSON message: {'year': 1925, 'total': 59.0, 'female': 60.6, 'male': 57.6}
+2025-10-05 19:25:46 | WARNING | Consumer interrupted by user.
+2025-10-05 19:25:46 | INFO | Kafka consumer for topic 'avg_csv' closed.
+2025-10-05 19:25:50 | INFO | Sent message to topic 'avg_csv': {'year': 1926, 'total': 56.7, 'female': 58.0, 'male': 55.5}
+2025-10-05 19:25:55 | INFO | Sent message to topic 'avg_csv': {'year': 1927, 'total': 60.4, 'female': 62.1, 'male': 59.0}
+2025-10-05 19:26:00 | INFO | Sent message to topic 'avg_csv': {'year': 1928, 'total': 56.8, 'female': 58.3, 'male': 55.6}
+2025-10-05 19:26:05 | INFO | Sent message to topic 'avg_csv': {'year': 1929, 'total': 57.1, 'female': 58.7, 'male': 55.8}
+2025-10-05 19:26:10 | INFO | Sent message to topic 'avg_csv': {'year': 1930, 'total': 59.7, 'female': 61.6, 'male': 58.1}
+2025-10-05 19:26:15 | INFO | Sent message to topic 'avg_csv': {'year': 1931, 'total': 61.1, 'female': 63.1, 'male': 59.4}
+2025-10-05 19:26:20 | INFO | Sent message to topic 'avg_csv': {'year': 1932, 'total': 62.1, 'female': 63.5, 'male': 61.0}
+2025-10-05 19:26:25 | INFO | Sent message to topic 'avg_csv': {'year': 1933, 'total': 63.3, 'female': 65.1, 'male': 61.7}
+2025-10-05 19:26:30 | INFO | Sent message to topic 'avg_csv': {'year': 1934, 'total': 61.1, 'female': 63.3, 'male': 59.3}
+2025-10-05 19:26:35 | INFO | Sent message to topic 'avg_csv': {'year': 1935, 'total': 61.7, 'female': 63.9, 'male': 59.9}
+2025-10-05 19:26:40 | INFO | Sent message to topic 'avg_csv': {'year': 1936, 'total': 58.5, 'female': 60.6, 'male': 56.6}
+2025-10-05 19:26:45 | INFO | Sent message to topic 'avg_csv': {'year': 1937, 'total': 60.0, 'female': 62.4, 'male': 58.0}
+2025-10-05 19:26:50 | INFO | Sent message to topic 'avg_csv': {'year': 1938, 'total': 63.5, 'female': 65.3, 'male': 61.9}
+2025-10-05 19:26:55 | INFO | Sent message to topic 'avg_csv': {'year': 1939, 'total': 63.7, 'female': 65.4, 'male': 62.1}
+2025-10-05 19:27:00 | INFO | Sent message to topic 'avg_csv': {'year': 1940, 'total': 62.9, 'female': 65.2, 'male': 60.8}
+2025-10-05 19:27:05 | INFO | Sent message to topic 'avg_csv': {'year': 1941, 'total': 64.8, 'female': 66.8, 'male': 63.1}
+2025-10-05 19:27:10 | INFO | Sent message to topic 'avg_csv': {'year': 1942, 'total': 66.2, 'female': 67.9, 'male': 64.7}
+2025-10-05 19:27:15 | INFO | Sent message to topic 'avg_csv': {'year': 1943, 'total': 63.3, 'female': 64.4, 'male': 62.4}
+2025-10-05 19:27:20 | INFO | Sent message to topic 'avg_csv': {'year': 1944, 'total': 65.2, 'female': 66.8, 'male': 63.6}
+2025-10-05 19:27:25 | INFO | Sent message to topic 'avg_csv': {'year': 1945, 'total': 65.9, 'female': 67.9, 'male': 63.6}
+2025-10-05 19:27:30 | INFO | Sent message to topic 'avg_csv': {'year': 1946, 'total': 66.7, 'female': 69.4, 'male': 64.4}
+2025-10-05 19:27:35 | INFO | Sent message to topic 'avg_csv': {'year': 1947, 'total': 66.8, 'female': 69.7, 'male': 64.4}
+2025-10-05 19:27:40 | INFO | Sent message to topic 'avg_csv': {'year': 1948, 'total': 67.2, 'female': 69.9, 'male': 64.6}
+2025-10-05 19:27:45 | INFO | Sent message to topic 'avg_csv': {'year': 1949, 'total': 68.0, 'female': 70.7, 'male': 65.2}
+2025-10-05 19:27:50 | INFO | Sent message to topic 'avg_csv': {'year': 1950, 'total': 68.2, 'female': 71.1, 'male': 65.6}
+2025-10-05 19:27:55 | INFO | Sent message to topic 'avg_csv': {'year': 1951, 'total': 68.4, 'female': 71.4, 'male': 65.6}
+2025-10-05 19:28:00 | INFO | Sent message to topic 'avg_csv': {'year': 1952, 'total': 68.6, 'female': 71.6, 'male': 65.8}
+2025-10-05 19:28:05 | INFO | Sent message to topic 'avg_csv': {'year': 1953, 'total': 68.8, 'female': 72.0, 'male': 66.0}
+2025-10-05 19:28:10 | INFO | Sent message to topic 'avg_csv': {'year': 1954, 'total': 69.6, 'female': 72.8, 'male': 66.7}
+2025-10-05 19:28:15 | INFO | Sent message to topic 'avg_csv': {'year': 1955, 'total': 69.6, 'female': 72.8, 'male': 66.7}
+2025-10-05 19:28:20 | INFO | Sent message to topic 'avg_csv': {'year': 1956, 'total': 69.7, 'female': 72.9, 'male': 66.7}
+2025-10-05 19:28:25 | INFO | Sent message to topic 'avg_csv': {'year': 1957, 'total': 69.5, 'female': 72.7, 'male': 66.4}
+2025-10-05 19:28:30 | INFO | Sent message to topic 'avg_csv': {'year': 1958, 'total': 69.6, 'female': 72.9, 'male': 66.6}
+2025-10-05 19:28:35 | INFO | Sent message to topic 'avg_csv': {'year': 1959, 'total': 69.9, 'female': 73.2, 'male': 66.8}
+2025-10-05 19:28:40 | INFO | Sent message to topic 'avg_csv': {'year': 1960, 'total': 69.7, 'female': 73.1, 'male': 66.6}
+2025-10-05 19:28:45 | INFO | Sent message to topic 'avg_csv': {'year': 1961, 'total': 70.2, 'female': 73.6, 'male': 67.1}
+2025-10-05 19:28:50 | INFO | Sent message to topic 'avg_csv': {'year': 1962, 'total': 70.1, 'female': 73.5, 'male': 66.9}
+2025-10-05 19:28:55 | INFO | Sent message to topic 'avg_csv': {'year': 1963, 'total': 69.9, 'female': 73.4, 'male': 66.6}
+2025-10-05 19:29:00 | INFO | Sent message to topic 'avg_csv': {'year': 1964, 'total': 70.2, 'female': 73.7, 'male': 66.8}
+2025-10-05 19:29:05 | INFO | Sent message to topic 'avg_csv': {'year': 1965, 'total': 70.2, 'female': 73.8, 'male': 66.8}
+2025-10-05 19:29:10 | INFO | Sent message to topic 'avg_csv': {'year': 1966, 'total': 70.2, 'female': 73.9, 'male': 66.7}
+2025-10-05 19:29:15 | INFO | Sent message to topic 'avg_csv': {'year': 1967, 'total': 70.5, 'female': 74.3, 'male': 67.0}
+2025-10-05 19:29:20 | INFO | Sent message to topic 'avg_csv': {'year': 1968, 'total': 70.2, 'female': 74.1, 'male': 66.6}
+2025-10-05 19:29:25 | INFO | Sent message to topic 'avg_csv': {'year': 1969, 'total': 70.5, 'female': 74.4, 'male': 66.8}
+2025-10-05 19:29:30 | INFO | Sent message to topic 'avg_csv': {'year': 1970, 'total': 70.8, 'female': 74.7, 'male': 67.1}
+2025-10-05 19:29:35 | INFO | Sent message to topic 'avg_csv': {'year': 1971, 'total': 71.1, 'female': 75.0, 'male': 67.4}
+2025-10-05 19:29:40 | INFO | Sent message to topic 'avg_csv': {'year': 1972, 'total': 71.2, 'female': 75.1, 'male': 67.4}
+2025-10-05 19:29:45 | INFO | Sent message to topic 'avg_csv': {'year': 1973, 'total': 71.4, 'female': 75.3, 'male': 67.6}
+2025-10-05 19:29:50 | INFO | Sent message to topic 'avg_csv': {'year': 1974, 'total': 72.0, 'female': 75.9, 'male': 68.2}
+2025-10-05 19:29:55 | INFO | Sent message to topic 'avg_csv': {'year': 1975, 'total': 72.6, 'female': 76.6, 'male': 68.8}
+2025-10-05 19:30:00 | INFO | Sent message to topic 'avg_csv': {'year': 1976, 'total': 72.9, 'female': 76.8, 'male': 69.1}
+2025-10-05 19:30:05 | INFO | Sent message to topic 'avg_csv': {'year': 1977, 'total': 73.3, 'female': 77.2, 'male': 69.5}
+2025-10-05 19:30:10 | INFO | Sent message to topic 'avg_csv': {'year': 1978, 'total': 73.5, 'female': 77.3, 'male': 69.6}
+2025-10-05 19:30:15 | INFO | Sent message to topic 'avg_csv': {'year': 1979, 'total': 73.9, 'female': 77.8, 'male': 70.0}
+2025-10-05 19:30:20 | INFO | Sent message to topic 'avg_csv': {'year': 1980, 'total': 73.7, 'female': 77.4, 'male': 70.0}
+2025-10-05 19:30:25 | INFO | Sent message to topic 'avg_csv': {'year': 1981, 'total': 74.1, 'female': 77.8, 'male': 70.4}
+2025-10-05 19:30:30 | INFO | Sent message to topic 'avg_csv': {'year': 1982, 'total': 74.5, 'female': 78.1, 'male': 70.8}
+2025-10-05 19:30:35 | INFO | Sent message to topic 'avg_csv': {'year': 1983, 'total': 74.6, 'female': 78.1, 'male': 71.0}
+2025-10-05 19:30:38 | WARNING | Producer interrupted by user.
+2025-10-05 19:30:38 | INFO | Kafka producer closed.
+2025-10-05 19:30:38 | INFO | END producer.
+2025-10-05 19:30:41 | INFO | Logging to file: logs/project_log.log
+2025-10-05 19:30:41 | INFO | Log sanitization enabled, personal info removed
+2025-10-05 19:30:41 | INFO | Project root: PROJECT_ROOT
+2025-10-05 19:30:41 | INFO | Data folder: PROJECT_ROOT/data
+2025-10-05 19:30:41 | INFO | Total Average Data file: PROJECT_ROOT/data/avg_le.csv
+2025-10-05 19:30:41 | INFO | Female Data file: PROJECT_ROOT/data/female_le.csv
+2025-10-05 19:30:41 | INFO | Male Data file: PROJECT_ROOT/data/male_le.csv
+2025-10-05 19:30:41 | INFO | START producer.
+2025-10-05 19:30:41 | INFO | Kafka broker address: localhost:9092
+2025-10-05 19:30:41 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'hMNex-8bR3emkYlz6xmmZg', 'controller_id': 1}
+2025-10-05 19:30:41 | INFO | Kafka topic: avg_csv
+2025-10-05 19:30:41 | INFO | Message interval: 5 seconds
+2025-10-05 19:30:41 | INFO | Kafka broker address: localhost:9092
+2025-10-05 19:30:41 | INFO | Connecting to Kafka broker at localhost:9092...
+2025-10-05 19:30:41 | INFO | Kafka producer successfully created.
+2025-10-05 19:30:41 | INFO | Kafka broker address: localhost:9092
+2025-10-05 19:30:41 | INFO | Topic 'avg_csv' already exists. Recreating fresh...
+2025-10-05 19:30:41 | INFO | Requested deletion of topic 'avg_csv'.
+2025-10-05 19:30:42 | INFO | Topic 'avg_csv' created successfully.
+2025-10-05 19:30:42 | INFO | Kafka topic 'avg_csv' is ready.
+2025-10-05 19:30:42 | INFO | Starting message production to topic 'avg_csv'...
+2025-10-05 19:30:42 | INFO | Opening total data file: PROJECT_ROOT/data/avg_le.csv
+2025-10-05 19:30:42 | INFO | Opening female date file: PROJECT_ROOT/data/female_le.csv
+2025-10-05 19:30:42 | INFO | Opening male data file: PROJECT_ROOT/data/male_le.csv
+2025-10-05 19:30:42 | INFO | Sent message to topic 'avg_csv': {'year': 1900, 'total': 47.3, 'female': 48.3, 'male': 46.3}
+2025-10-05 19:30:46 | INFO | Logging to file: logs/project_log.log
+2025-10-05 19:30:46 | INFO | Log sanitization enabled, personal info removed
+2025-10-05 19:30:46 | INFO | START consumer.
+2025-10-05 19:30:46 | INFO | Kafka topic: avg_csv
+2025-10-05 19:30:46 | INFO | Kafka consumer group id: avg_group
+2025-10-05 19:30:46 | INFO | Consumer: Topic 'avg_csv' and group 'avg_group'...
+2025-10-05 19:30:46 | INFO | Kafka broker address: localhost:9092
+2025-10-05 19:30:46 | INFO | Creating Kafka consumer. Topic='avg_csv' and group ID='avg_group'.
+2025-10-05 19:30:46 | INFO | Kafka consumer created successfully.
+2025-10-05 19:30:46 | INFO | Polling messages from topic 'avg_csv'...
+2025-10-05 19:30:47 | INFO | Sent message to topic 'avg_csv': {'year': 1901, 'total': 49.1, 'female': 50.6, 'male': 47.6}
+2025-10-05 19:30:50 | INFO | Processed JSON message: {'year': 1900, 'total': 47.3, 'female': 48.3, 'male': 46.3}
+2025-10-05 19:30:50 | INFO | Processed JSON message: {'year': 1901, 'total': 49.1, 'female': 50.6, 'male': 47.6}
+2025-10-05 19:30:52 | INFO | Sent message to topic 'avg_csv': {'year': 1902, 'total': 51.5, 'female': 53.4, 'male': 49.8}
+2025-10-05 19:30:52 | INFO | Processed JSON message: {'year': 1902, 'total': 51.5, 'female': 53.4, 'male': 49.8}
+2025-10-05 19:30:57 | INFO | Sent message to topic 'avg_csv': {'year': 1903, 'total': 50.5, 'female': 52.0, 'male': 49.1}
+2025-10-05 19:30:57 | INFO | Processed JSON message: {'year': 1903, 'total': 50.5, 'female': 52.0, 'male': 49.1}
+2025-10-05 19:31:02 | INFO | Sent message to topic 'avg_csv': {'year': 1904, 'total': 47.6, 'female': 49.1, 'male': 46.2}
+2025-10-05 19:31:02 | INFO | Processed JSON message: {'year': 1904, 'total': 47.6, 'female': 49.1, 'male': 46.2}
+2025-10-05 19:31:07 | INFO | Sent message to topic 'avg_csv': {'year': 1905, 'total': 48.7, 'female': 50.2, 'male': 47.3}
+2025-10-05 19:31:07 | INFO | Processed JSON message: {'year': 1905, 'total': 48.7, 'female': 50.2, 'male': 47.3}
+2025-10-05 19:31:12 | INFO | Sent message to topic 'avg_csv': {'year': 1906, 'total': 48.7, 'female': 50.8, 'male': 46.9}
+2025-10-05 19:31:12 | INFO | Processed JSON message: {'year': 1906, 'total': 48.7, 'female': 50.8, 'male': 46.9}
+2025-10-05 19:31:17 | INFO | Sent message to topic 'avg_csv': {'year': 1907, 'total': 47.6, 'female': 49.9, 'male': 45.6}
+2025-10-05 19:31:17 | INFO | Processed JSON message: {'year': 1907, 'total': 47.6, 'female': 49.9, 'male': 45.6}
+2025-10-05 19:31:22 | INFO | Sent message to topic 'avg_csv': {'year': 1908, 'total': 51.1, 'female': 52.8, 'male': 49.5}
+2025-10-05 19:31:22 | INFO | Processed JSON message: {'year': 1908, 'total': 51.1, 'female': 52.8, 'male': 49.5}
+2025-10-05 19:31:27 | INFO | Sent message to topic 'avg_csv': {'year': 1909, 'total': 52.1, 'female': 53.8, 'male': 50.5}
+2025-10-05 19:31:27 | INFO | Processed JSON message: {'year': 1909, 'total': 52.1, 'female': 53.8, 'male': 50.5}
+2025-10-05 19:31:32 | INFO | Sent message to topic 'avg_csv': {'year': 1910, 'total': 50.0, 'female': 51.8, 'male': 48.4}
+2025-10-05 19:31:32 | INFO | Processed JSON message: {'year': 1910, 'total': 50.0, 'female': 51.8, 'male': 48.4}
+2025-10-05 19:31:34 | WARNING | Consumer interrupted by user.
+2025-10-05 19:31:34 | INFO | Kafka consumer for topic 'avg_csv' closed.
+2025-10-05 19:31:37 | INFO | Sent message to topic 'avg_csv': {'year': 1911, 'total': 52.6, 'female': 54.4, 'male': 50.9}
+2025-10-05 19:31:42 | INFO | Sent message to topic 'avg_csv': {'year': 1912, 'total': 53.5, 'female': 55.9, 'male': 51.5}
+2025-10-05 19:31:47 | INFO | Sent message to topic 'avg_csv': {'year': 1913, 'total': 52.5, 'female': 55.0, 'male': 50.3}
+2025-10-05 19:31:52 | INFO | Sent message to topic 'avg_csv': {'year': 1914, 'total': 54.2, 'female': 56.8, 'male': 52.0}
+2025-10-05 19:31:57 | INFO | Sent message to topic 'avg_csv': {'year': 1915, 'total': 54.5, 'female': 56.8, 'male': 52.5}
+2025-10-05 19:32:02 | INFO | Sent message to topic 'avg_csv': {'year': 1916, 'total': 51.7, 'female': 54.3, 'male': 49.6}
+2025-10-05 19:32:07 | INFO | Sent message to topic 'avg_csv': {'year': 1917, 'total': 50.9, 'female': 54.0, 'male': 48.4}
+2025-10-05 19:32:12 | INFO | Sent message to topic 'avg_csv': {'year': 1918, 'total': 39.1, 'female': 42.2, 'male': 36.6}
+2025-10-05 19:32:17 | INFO | Sent message to topic 'avg_csv': {'year': 1919, 'total': 54.7, 'female': 56.0, 'male': 53.5}
+2025-10-05 19:32:22 | INFO | Sent message to topic 'avg_csv': {'year': 1920, 'total': 54.1, 'female': 54.6, 'male': 53.6}
+2025-10-05 19:32:27 | INFO | Sent message to topic 'avg_csv': {'year': 1921, 'total': 60.8, 'female': 61.8, 'male': 60.0}
+2025-10-05 19:32:32 | INFO | Sent message to topic 'avg_csv': {'year': 1922, 'total': 59.6, 'female': 61.0, 'male': 58.4}
+2025-10-05 19:32:37 | INFO | Sent message to topic 'avg_csv': {'year': 1923, 'total': 57.2, 'female': 58.5, 'male': 56.1}
+2025-10-05 19:32:42 | INFO | Sent message to topic 'avg_csv': {'year': 1924, 'total': 59.7, 'female': 61.5, 'male': 58.1}
+2025-10-05 19:32:47 | INFO | Sent message to topic 'avg_csv': {'year': 1925, 'total': 59.0, 'female': 60.6, 'male': 57.6}
+2025-10-05 19:32:52 | INFO | Sent message to topic 'avg_csv': {'year': 1926, 'total': 56.7, 'female': 58.0, 'male': 55.5}
+2025-10-05 19:32:57 | INFO | Sent message to topic 'avg_csv': {'year': 1927, 'total': 60.4, 'female': 62.1, 'male': 59.0}
+2025-10-05 19:33:02 | INFO | Sent message to topic 'avg_csv': {'year': 1928, 'total': 56.8, 'female': 58.3, 'male': 55.6}
+2025-10-05 19:33:07 | INFO | Sent message to topic 'avg_csv': {'year': 1929, 'total': 57.1, 'female': 58.7, 'male': 55.8}
+2025-10-05 19:33:12 | INFO | Sent message to topic 'avg_csv': {'year': 1930, 'total': 59.7, 'female': 61.6, 'male': 58.1}
+2025-10-05 19:33:17 | INFO | Sent message to topic 'avg_csv': {'year': 1931, 'total': 61.1, 'female': 63.1, 'male': 59.4}
+2025-10-05 19:33:22 | INFO | Sent message to topic 'avg_csv': {'year': 1932, 'total': 62.1, 'female': 63.5, 'male': 61.0}
+2025-10-05 19:33:27 | INFO | Sent message to topic 'avg_csv': {'year': 1933, 'total': 63.3, 'female': 65.1, 'male': 61.7}
+2025-10-05 19:33:32 | INFO | Sent message to topic 'avg_csv': {'year': 1934, 'total': 61.1, 'female': 63.3, 'male': 59.3}
+2025-10-05 19:33:37 | INFO | Sent message to topic 'avg_csv': {'year': 1935, 'total': 61.7, 'female': 63.9, 'male': 59.9}
+2025-10-05 19:33:42 | INFO | Sent message to topic 'avg_csv': {'year': 1936, 'total': 58.5, 'female': 60.6, 'male': 56.6}
+2025-10-05 19:33:47 | INFO | Sent message to topic 'avg_csv': {'year': 1937, 'total': 60.0, 'female': 62.4, 'male': 58.0}
+2025-10-05 19:33:52 | INFO | Sent message to topic 'avg_csv': {'year': 1938, 'total': 63.5, 'female': 65.3, 'male': 61.9}
+2025-10-05 19:33:57 | INFO | Sent message to topic 'avg_csv': {'year': 1939, 'total': 63.7, 'female': 65.4, 'male': 62.1}
+2025-10-05 19:34:02 | INFO | Sent message to topic 'avg_csv': {'year': 1940, 'total': 62.9, 'female': 65.2, 'male': 60.8}
+2025-10-05 19:34:07 | INFO | Sent message to topic 'avg_csv': {'year': 1941, 'total': 64.8, 'female': 66.8, 'male': 63.1}
+2025-10-05 19:34:12 | INFO | Sent message to topic 'avg_csv': {'year': 1942, 'total': 66.2, 'female': 67.9, 'male': 64.7}
+2025-10-05 19:34:17 | INFO | Sent message to topic 'avg_csv': {'year': 1943, 'total': 63.3, 'female': 64.4, 'male': 62.4}
+2025-10-05 19:34:22 | INFO | Sent message to topic 'avg_csv': {'year': 1944, 'total': 65.2, 'female': 66.8, 'male': 63.6}
+2025-10-05 19:34:27 | INFO | Sent message to topic 'avg_csv': {'year': 1945, 'total': 65.9, 'female': 67.9, 'male': 63.6}
+2025-10-05 19:34:32 | INFO | Sent message to topic 'avg_csv': {'year': 1946, 'total': 66.7, 'female': 69.4, 'male': 64.4}
+2025-10-05 19:34:37 | INFO | Sent message to topic 'avg_csv': {'year': 1947, 'total': 66.8, 'female': 69.7, 'male': 64.4}
+2025-10-05 19:34:42 | INFO | Sent message to topic 'avg_csv': {'year': 1948, 'total': 67.2, 'female': 69.9, 'male': 64.6}
+2025-10-05 19:34:47 | INFO | Sent message to topic 'avg_csv': {'year': 1949, 'total': 68.0, 'female': 70.7, 'male': 65.2}
+2025-10-05 19:34:52 | INFO | Sent message to topic 'avg_csv': {'year': 1950, 'total': 68.2, 'female': 71.1, 'male': 65.6}
+2025-10-05 19:34:57 | INFO | Sent message to topic 'avg_csv': {'year': 1951, 'total': 68.4, 'female': 71.4, 'male': 65.6}
+2025-10-05 19:35:02 | INFO | Sent message to topic 'avg_csv': {'year': 1952, 'total': 68.6, 'female': 71.6, 'male': 65.8}
+2025-10-05 19:35:07 | INFO | Sent message to topic 'avg_csv': {'year': 1953, 'total': 68.8, 'female': 72.0, 'male': 66.0}
+2025-10-05 19:35:12 | INFO | Sent message to topic 'avg_csv': {'year': 1954, 'total': 69.6, 'female': 72.8, 'male': 66.7}
+2025-10-05 19:35:17 | INFO | Sent message to topic 'avg_csv': {'year': 1955, 'total': 69.6, 'female': 72.8, 'male': 66.7}
+2025-10-05 19:35:22 | INFO | Sent message to topic 'avg_csv': {'year': 1956, 'total': 69.7, 'female': 72.9, 'male': 66.7}
+2025-10-05 19:35:27 | INFO | Sent message to topic 'avg_csv': {'year': 1957, 'total': 69.5, 'female': 72.7, 'male': 66.4}
+2025-10-05 19:35:32 | INFO | Sent message to topic 'avg_csv': {'year': 1958, 'total': 69.6, 'female': 72.9, 'male': 66.6}
+2025-10-05 19:35:37 | INFO | Sent message to topic 'avg_csv': {'year': 1959, 'total': 69.9, 'female': 73.2, 'male': 66.8}
+2025-10-05 19:35:42 | INFO | Sent message to topic 'avg_csv': {'year': 1960, 'total': 69.7, 'female': 73.1, 'male': 66.6}
+2025-10-05 19:35:47 | INFO | Sent message to topic 'avg_csv': {'year': 1961, 'total': 70.2, 'female': 73.6, 'male': 67.1}
+2025-10-05 19:35:52 | INFO | Sent message to topic 'avg_csv': {'year': 1962, 'total': 70.1, 'female': 73.5, 'male': 66.9}
+2025-10-05 19:35:57 | INFO | Sent message to topic 'avg_csv': {'year': 1963, 'total': 69.9, 'female': 73.4, 'male': 66.6}
+2025-10-05 19:36:02 | INFO | Sent message to topic 'avg_csv': {'year': 1964, 'total': 70.2, 'female': 73.7, 'male': 66.8}
+2025-10-05 19:36:07 | INFO | Sent message to topic 'avg_csv': {'year': 1965, 'total': 70.2, 'female': 73.8, 'male': 66.8}
+2025-10-05 19:36:12 | INFO | Sent message to topic 'avg_csv': {'year': 1966, 'total': 70.2, 'female': 73.9, 'male': 66.7}
+2025-10-05 19:36:17 | INFO | Sent message to topic 'avg_csv': {'year': 1967, 'total': 70.5, 'female': 74.3, 'male': 67.0}
+2025-10-05 19:36:22 | INFO | Sent message to topic 'avg_csv': {'year': 1968, 'total': 70.2, 'female': 74.1, 'male': 66.6}
+2025-10-05 19:36:27 | INFO | Sent message to topic 'avg_csv': {'year': 1969, 'total': 70.5, 'female': 74.4, 'male': 66.8}
+2025-10-05 19:36:32 | INFO | Sent message to topic 'avg_csv': {'year': 1970, 'total': 70.8, 'female': 74.7, 'male': 67.1}
+2025-10-05 19:36:37 | INFO | Sent message to topic 'avg_csv': {'year': 1971, 'total': 71.1, 'female': 75.0, 'male': 67.4}
+2025-10-05 19:36:42 | INFO | Sent message to topic 'avg_csv': {'year': 1972, 'total': 71.2, 'female': 75.1, 'male': 67.4}
+2025-10-05 19:36:47 | INFO | Sent message to topic 'avg_csv': {'year': 1973, 'total': 71.4, 'female': 75.3, 'male': 67.6}
+2025-10-05 19:36:51 | WARNING | Producer interrupted by user.
+2025-10-05 19:36:51 | INFO | Kafka producer closed.
+2025-10-05 19:36:51 | INFO | END producer.
+2025-10-05 19:36:54 | INFO | Logging to file: logs/project_log.log
+2025-10-05 19:36:54 | INFO | Log sanitization enabled, personal info removed
+2025-10-05 19:36:54 | INFO | Project root: PROJECT_ROOT
+2025-10-05 19:36:54 | INFO | Data folder: PROJECT_ROOT/data
+2025-10-05 19:36:54 | INFO | Total Average Data file: PROJECT_ROOT/data/avg_le.csv
+2025-10-05 19:36:54 | INFO | Female Data file: PROJECT_ROOT/data/female_le.csv
+2025-10-05 19:36:54 | INFO | Male Data file: PROJECT_ROOT/data/male_le.csv
+2025-10-05 19:36:54 | INFO | START producer.
+2025-10-05 19:36:54 | INFO | Kafka broker address: localhost:9092
+2025-10-05 19:36:54 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'hMNex-8bR3emkYlz6xmmZg', 'controller_id': 1}
+2025-10-05 19:36:54 | INFO | Kafka topic: avg_csv
+2025-10-05 19:36:54 | INFO | Message interval: 5 seconds
+2025-10-05 19:36:54 | INFO | Kafka broker address: localhost:9092
+2025-10-05 19:36:54 | INFO | Connecting to Kafka broker at localhost:9092...
+2025-10-05 19:36:54 | INFO | Kafka producer successfully created.
+2025-10-05 19:36:54 | INFO | Kafka broker address: localhost:9092
+2025-10-05 19:36:54 | INFO | Topic 'avg_csv' already exists. Recreating fresh...
+2025-10-05 19:36:54 | INFO | Requested deletion of topic 'avg_csv'.
+2025-10-05 19:36:54 | INFO | Topic 'avg_csv' created successfully.
+2025-10-05 19:36:54 | INFO | Kafka topic 'avg_csv' is ready.
+2025-10-05 19:36:54 | INFO | Starting message production to topic 'avg_csv'...
+2025-10-05 19:36:54 | INFO | Opening total data file: PROJECT_ROOT/data/avg_le.csv
+2025-10-05 19:36:54 | INFO | Opening female date file: PROJECT_ROOT/data/female_le.csv
+2025-10-05 19:36:54 | INFO | Opening male data file: PROJECT_ROOT/data/male_le.csv
+2025-10-05 19:36:54 | INFO | Sent message to topic 'avg_csv': {'year': 1900, 'total': 47.3, 'female': 48.3, 'male': 46.3}
+2025-10-05 19:36:59 | INFO | Sent message to topic 'avg_csv': {'year': 1901, 'total': 49.1, 'female': 50.6, 'male': 47.6}
+2025-10-05 19:37:00 | INFO | Logging to file: logs/project_log.log
+2025-10-05 19:37:00 | INFO | Log sanitization enabled, personal info removed
+2025-10-05 19:37:00 | INFO | START consumer.
+2025-10-05 19:37:00 | INFO | Kafka topic: avg_csv
+2025-10-05 19:37:00 | INFO | Kafka consumer group id: avg_group
+2025-10-05 19:37:00 | INFO | Consumer: Topic 'avg_csv' and group 'avg_group'...
+2025-10-05 19:37:00 | INFO | Kafka broker address: localhost:9092
+2025-10-05 19:37:00 | INFO | Creating Kafka consumer. Topic='avg_csv' and group ID='avg_group'.
+2025-10-05 19:37:00 | INFO | Kafka consumer created successfully.
+2025-10-05 19:37:00 | INFO | Polling messages from topic 'avg_csv'...
+2025-10-05 19:37:04 | INFO | Processed JSON message: {'year': 1900, 'total': 47.3, 'female': 48.3, 'male': 46.3}
+2025-10-05 19:37:04 | INFO | Processed JSON message: {'year': 1901, 'total': 49.1, 'female': 50.6, 'male': 47.6}
+2025-10-05 19:37:04 | INFO | Sent message to topic 'avg_csv': {'year': 1902, 'total': 51.5, 'female': 53.4, 'male': 49.8}
+2025-10-05 19:37:04 | INFO | Processed JSON message: {'year': 1902, 'total': 51.5, 'female': 53.4, 'male': 49.8}
+2025-10-05 19:37:09 | INFO | Sent message to topic 'avg_csv': {'year': 1903, 'total': 50.5, 'female': 52.0, 'male': 49.1}
+2025-10-05 19:37:09 | INFO | Processed JSON message: {'year': 1903, 'total': 50.5, 'female': 52.0, 'male': 49.1}
+2025-10-05 19:37:14 | INFO | Sent message to topic 'avg_csv': {'year': 1904, 'total': 47.6, 'female': 49.1, 'male': 46.2}
+2025-10-05 19:37:14 | INFO | Processed JSON message: {'year': 1904, 'total': 47.6, 'female': 49.1, 'male': 46.2}
+2025-10-05 19:37:19 | INFO | Sent message to topic 'avg_csv': {'year': 1905, 'total': 48.7, 'female': 50.2, 'male': 47.3}
+2025-10-05 19:37:19 | INFO | Processed JSON message: {'year': 1905, 'total': 48.7, 'female': 50.2, 'male': 47.3}
+2025-10-05 19:37:24 | INFO | Sent message to topic 'avg_csv': {'year': 1906, 'total': 48.7, 'female': 50.8, 'male': 46.9}
+2025-10-05 19:37:24 | INFO | Processed JSON message: {'year': 1906, 'total': 48.7, 'female': 50.8, 'male': 46.9}
+2025-10-05 19:37:29 | INFO | Sent message to topic 'avg_csv': {'year': 1907, 'total': 47.6, 'female': 49.9, 'male': 45.6}
+2025-10-05 19:37:29 | INFO | Processed JSON message: {'year': 1907, 'total': 47.6, 'female': 49.9, 'male': 45.6}
+2025-10-05 19:37:34 | INFO | Sent message to topic 'avg_csv': {'year': 1908, 'total': 51.1, 'female': 52.8, 'male': 49.5}
+2025-10-05 19:37:34 | INFO | Processed JSON message: {'year': 1908, 'total': 51.1, 'female': 52.8, 'male': 49.5}
+2025-10-05 19:37:39 | INFO | Sent message to topic 'avg_csv': {'year': 1909, 'total': 52.1, 'female': 53.8, 'male': 50.5}
+2025-10-05 19:37:39 | INFO | Processed JSON message: {'year': 1909, 'total': 52.1, 'female': 53.8, 'male': 50.5}
+2025-10-05 19:37:44 | INFO | Sent message to topic 'avg_csv': {'year': 1910, 'total': 50.0, 'female': 51.8, 'male': 48.4}
+2025-10-05 19:37:44 | INFO | Processed JSON message: {'year': 1910, 'total': 50.0, 'female': 51.8, 'male': 48.4}
+2025-10-05 19:37:47 | WARNING | Consumer interrupted by user.
+2025-10-05 19:37:47 | INFO | Kafka consumer for topic 'avg_csv' closed.
+2025-10-05 19:37:49 | INFO | Sent message to topic 'avg_csv': {'year': 1911, 'total': 52.6, 'female': 54.4, 'male': 50.9}
+2025-10-05 19:37:54 | INFO | Sent message to topic 'avg_csv': {'year': 1912, 'total': 53.5, 'female': 55.9, 'male': 51.5}
+2025-10-05 19:37:59 | INFO | Sent message to topic 'avg_csv': {'year': 1913, 'total': 52.5, 'female': 55.0, 'male': 50.3}
+2025-10-05 19:38:04 | INFO | Sent message to topic 'avg_csv': {'year': 1914, 'total': 54.2, 'female': 56.8, 'male': 52.0}
+2025-10-05 19:38:09 | INFO | Sent message to topic 'avg_csv': {'year': 1915, 'total': 54.5, 'female': 56.8, 'male': 52.5}
+2025-10-05 19:38:14 | INFO | Sent message to topic 'avg_csv': {'year': 1916, 'total': 51.7, 'female': 54.3, 'male': 49.6}
+2025-10-05 19:38:19 | INFO | Sent message to topic 'avg_csv': {'year': 1917, 'total': 50.9, 'female': 54.0, 'male': 48.4}
+2025-10-05 19:38:24 | INFO | Sent message to topic 'avg_csv': {'year': 1918, 'total': 39.1, 'female': 42.2, 'male': 36.6}
+2025-10-05 19:38:29 | INFO | Sent message to topic 'avg_csv': {'year': 1919, 'total': 54.7, 'female': 56.0, 'male': 53.5}
+2025-10-05 19:38:34 | INFO | Sent message to topic 'avg_csv': {'year': 1920, 'total': 54.1, 'female': 54.6, 'male': 53.6}
+2025-10-05 19:38:39 | INFO | Sent message to topic 'avg_csv': {'year': 1921, 'total': 60.8, 'female': 61.8, 'male': 60.0}
+2025-10-05 19:38:44 | INFO | Sent message to topic 'avg_csv': {'year': 1922, 'total': 59.6, 'female': 61.0, 'male': 58.4}
+2025-10-05 19:38:49 | INFO | Sent message to topic 'avg_csv': {'year': 1923, 'total': 57.2, 'female': 58.5, 'male': 56.1}
+2025-10-05 19:38:54 | INFO | Sent message to topic 'avg_csv': {'year': 1924, 'total': 59.7, 'female': 61.5, 'male': 58.1}
+2025-10-05 19:38:59 | INFO | Sent message to topic 'avg_csv': {'year': 1925, 'total': 59.0, 'female': 60.6, 'male': 57.6}
+2025-10-05 19:39:04 | INFO | Sent message to topic 'avg_csv': {'year': 1926, 'total': 56.7, 'female': 58.0, 'male': 55.5}
+2025-10-05 19:39:09 | INFO | Sent message to topic 'avg_csv': {'year': 1927, 'total': 60.4, 'female': 62.1, 'male': 59.0}
+2025-10-05 19:39:15 | INFO | Sent message to topic 'avg_csv': {'year': 1928, 'total': 56.8, 'female': 58.3, 'male': 55.6}
+2025-10-05 19:39:20 | INFO | Sent message to topic 'avg_csv': {'year': 1929, 'total': 57.1, 'female': 58.7, 'male': 55.8}
+2025-10-05 19:39:25 | INFO | Sent message to topic 'avg_csv': {'year': 1930, 'total': 59.7, 'female': 61.6, 'male': 58.1}
+2025-10-05 19:39:30 | INFO | Sent message to topic 'avg_csv': {'year': 1931, 'total': 61.1, 'female': 63.1, 'male': 59.4}
+2025-10-05 19:39:35 | INFO | Sent message to topic 'avg_csv': {'year': 1932, 'total': 62.1, 'female': 63.5, 'male': 61.0}
+2025-10-05 19:39:40 | INFO | Sent message to topic 'avg_csv': {'year': 1933, 'total': 63.3, 'female': 65.1, 'male': 61.7}
+2025-10-05 19:39:45 | INFO | Sent message to topic 'avg_csv': {'year': 1934, 'total': 61.1, 'female': 63.3, 'male': 59.3}
+2025-10-05 19:39:50 | INFO | Sent message to topic 'avg_csv': {'year': 1935, 'total': 61.7, 'female': 63.9, 'male': 59.9}
+2025-10-05 19:39:55 | INFO | Sent message to topic 'avg_csv': {'year': 1936, 'total': 58.5, 'female': 60.6, 'male': 56.6}
+2025-10-05 19:40:00 | INFO | Sent message to topic 'avg_csv': {'year': 1937, 'total': 60.0, 'female': 62.4, 'male': 58.0}
+2025-10-05 19:40:05 | INFO | Sent message to topic 'avg_csv': {'year': 1938, 'total': 63.5, 'female': 65.3, 'male': 61.9}
+2025-10-05 19:40:07 | WARNING | Producer interrupted by user.
+2025-10-05 19:40:07 | INFO | Kafka producer closed.
+2025-10-05 19:40:07 | INFO | END producer.
+2025-10-05 19:40:10 | INFO | Logging to file: logs/project_log.log
+2025-10-05 19:40:10 | INFO | Log sanitization enabled, personal info removed
+2025-10-05 19:40:10 | INFO | Project root: PROJECT_ROOT
+2025-10-05 19:40:10 | INFO | Data folder: PROJECT_ROOT/data
+2025-10-05 19:40:10 | INFO | Total Average Data file: PROJECT_ROOT/data/avg_le.csv
+2025-10-05 19:40:10 | INFO | Female Data file: PROJECT_ROOT/data/female_le.csv
+2025-10-05 19:40:10 | INFO | Male Data file: PROJECT_ROOT/data/male_le.csv
+2025-10-05 19:40:10 | INFO | START producer.
+2025-10-05 19:40:10 | INFO | Kafka broker address: localhost:9092
+2025-10-05 19:40:10 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'hMNex-8bR3emkYlz6xmmZg', 'controller_id': 1}
+2025-10-05 19:40:10 | INFO | Kafka topic: avg_csv
+2025-10-05 19:40:10 | INFO | Message interval: 5 seconds
+2025-10-05 19:40:10 | INFO | Kafka broker address: localhost:9092
+2025-10-05 19:40:10 | INFO | Connecting to Kafka broker at localhost:9092...
+2025-10-05 19:40:10 | INFO | Kafka producer successfully created.
+2025-10-05 19:40:10 | INFO | Kafka broker address: localhost:9092
+2025-10-05 19:40:10 | INFO | Topic 'avg_csv' already exists. Recreating fresh...
+2025-10-05 19:40:10 | INFO | Requested deletion of topic 'avg_csv'.
+2025-10-05 19:40:10 | INFO | Topic 'avg_csv' created successfully.
+2025-10-05 19:40:10 | INFO | Kafka topic 'avg_csv' is ready.
+2025-10-05 19:40:10 | INFO | Starting message production to topic 'avg_csv'...
+2025-10-05 19:40:10 | INFO | Opening total data file: PROJECT_ROOT/data/avg_le.csv
+2025-10-05 19:40:10 | INFO | Opening female date file: PROJECT_ROOT/data/female_le.csv
+2025-10-05 19:40:10 | INFO | Opening male data file: PROJECT_ROOT/data/male_le.csv
+2025-10-05 19:40:10 | INFO | Sent message to topic 'avg_csv': {'year': 1900, 'total': 47.3, 'female': 48.3, 'male': 46.3}
+2025-10-05 19:40:15 | INFO | Logging to file: logs/project_log.log
+2025-10-05 19:40:15 | INFO | Log sanitization enabled, personal info removed
+2025-10-05 19:40:15 | INFO | START consumer.
+2025-10-05 19:40:15 | INFO | Kafka topic: avg_csv
+2025-10-05 19:40:15 | INFO | Kafka consumer group id: avg_group
+2025-10-05 19:40:15 | INFO | Consumer: Topic 'avg_csv' and group 'avg_group'...
+2025-10-05 19:40:15 | INFO | Kafka broker address: localhost:9092
+2025-10-05 19:40:15 | INFO | Creating Kafka consumer. Topic='avg_csv' and group ID='avg_group'.
+2025-10-05 19:40:15 | INFO | Kafka consumer created successfully.
+2025-10-05 19:40:15 | INFO | Polling messages from topic 'avg_csv'...
+2025-10-05 19:40:15 | INFO | Sent message to topic 'avg_csv': {'year': 1901, 'total': 49.1, 'female': 50.6, 'male': 47.6}
+2025-10-05 19:40:19 | INFO | Processed JSON message: {'year': 1900, 'total': 47.3, 'female': 48.3, 'male': 46.3}
+2025-10-05 19:40:19 | INFO | Processed JSON message: {'year': 1901, 'total': 49.1, 'female': 50.6, 'male': 47.6}
+2025-10-05 19:40:20 | INFO | Sent message to topic 'avg_csv': {'year': 1902, 'total': 51.5, 'female': 53.4, 'male': 49.8}
+2025-10-05 19:40:20 | INFO | Processed JSON message: {'year': 1902, 'total': 51.5, 'female': 53.4, 'male': 49.8}
+2025-10-05 19:40:25 | INFO | Sent message to topic 'avg_csv': {'year': 1903, 'total': 50.5, 'female': 52.0, 'male': 49.1}
+2025-10-05 19:40:25 | INFO | Processed JSON message: {'year': 1903, 'total': 50.5, 'female': 52.0, 'male': 49.1}
+2025-10-05 19:40:30 | INFO | Sent message to topic 'avg_csv': {'year': 1904, 'total': 47.6, 'female': 49.1, 'male': 46.2}
+2025-10-05 19:40:30 | INFO | Processed JSON message: {'year': 1904, 'total': 47.6, 'female': 49.1, 'male': 46.2}
+2025-10-05 19:40:35 | INFO | Sent message to topic 'avg_csv': {'year': 1905, 'total': 48.7, 'female': 50.2, 'male': 47.3}
+2025-10-05 19:40:35 | INFO | Processed JSON message: {'year': 1905, 'total': 48.7, 'female': 50.2, 'male': 47.3}
+2025-10-05 19:40:40 | INFO | Sent message to topic 'avg_csv': {'year': 1906, 'total': 48.7, 'female': 50.8, 'male': 46.9}
+2025-10-05 19:40:40 | INFO | Processed JSON message: {'year': 1906, 'total': 48.7, 'female': 50.8, 'male': 46.9}
+2025-10-05 19:40:45 | INFO | Sent message to topic 'avg_csv': {'year': 1907, 'total': 47.6, 'female': 49.9, 'male': 45.6}
+2025-10-05 19:40:45 | INFO | Processed JSON message: {'year': 1907, 'total': 47.6, 'female': 49.9, 'male': 45.6}
+2025-10-05 19:40:50 | INFO | Sent message to topic 'avg_csv': {'year': 1908, 'total': 51.1, 'female': 52.8, 'male': 49.5}
+2025-10-05 19:40:50 | INFO | Processed JSON message: {'year': 1908, 'total': 51.1, 'female': 52.8, 'male': 49.5}
+2025-10-05 19:40:55 | INFO | Sent message to topic 'avg_csv': {'year': 1909, 'total': 52.1, 'female': 53.8, 'male': 50.5}
+2025-10-05 19:40:55 | INFO | Processed JSON message: {'year': 1909, 'total': 52.1, 'female': 53.8, 'male': 50.5}
+2025-10-05 19:41:00 | INFO | Sent message to topic 'avg_csv': {'year': 1910, 'total': 50.0, 'female': 51.8, 'male': 48.4}
+2025-10-05 19:41:00 | INFO | Processed JSON message: {'year': 1910, 'total': 50.0, 'female': 51.8, 'male': 48.4}
+2025-10-05 19:41:05 | INFO | Sent message to topic 'avg_csv': {'year': 1911, 'total': 52.6, 'female': 54.4, 'male': 50.9}
+2025-10-05 19:41:05 | INFO | Processed JSON message: {'year': 1911, 'total': 52.6, 'female': 54.4, 'male': 50.9}
+2025-10-05 19:41:09 | WARNING | Consumer interrupted by user.
+2025-10-05 19:41:09 | INFO | Kafka consumer for topic 'avg_csv' closed.
+2025-10-05 19:41:10 | INFO | Sent message to topic 'avg_csv': {'year': 1912, 'total': 53.5, 'female': 55.9, 'male': 51.5}
+2025-10-05 19:41:15 | INFO | Sent message to topic 'avg_csv': {'year': 1913, 'total': 52.5, 'female': 55.0, 'male': 50.3}
+2025-10-05 19:41:20 | INFO | Sent message to topic 'avg_csv': {'year': 1914, 'total': 54.2, 'female': 56.8, 'male': 52.0}
+2025-10-05 19:41:25 | INFO | Sent message to topic 'avg_csv': {'year': 1915, 'total': 54.5, 'female': 56.8, 'male': 52.5}
+2025-10-05 19:41:30 | INFO | Sent message to topic 'avg_csv': {'year': 1916, 'total': 51.7, 'female': 54.3, 'male': 49.6}
+2025-10-05 19:41:35 | INFO | Sent message to topic 'avg_csv': {'year': 1917, 'total': 50.9, 'female': 54.0, 'male': 48.4}
+2025-10-05 19:41:40 | INFO | Sent message to topic 'avg_csv': {'year': 1918, 'total': 39.1, 'female': 42.2, 'male': 36.6}
+2025-10-05 19:41:45 | INFO | Sent message to topic 'avg_csv': {'year': 1919, 'total': 54.7, 'female': 56.0, 'male': 53.5}
+2025-10-05 19:41:50 | INFO | Sent message to topic 'avg_csv': {'year': 1920, 'total': 54.1, 'female': 54.6, 'male': 53.6}
+2025-10-05 19:41:55 | INFO | Sent message to topic 'avg_csv': {'year': 1921, 'total': 60.8, 'female': 61.8, 'male': 60.0}
+2025-10-05 19:42:00 | INFO | Sent message to topic 'avg_csv': {'year': 1922, 'total': 59.6, 'female': 61.0, 'male': 58.4}
+2025-10-05 19:42:05 | INFO | Sent message to topic 'avg_csv': {'year': 1923, 'total': 57.2, 'female': 58.5, 'male': 56.1}
+2025-10-05 19:42:10 | INFO | Sent message to topic 'avg_csv': {'year': 1924, 'total': 59.7, 'female': 61.5, 'male': 58.1}
+2025-10-05 19:42:15 | INFO | Sent message to topic 'avg_csv': {'year': 1925, 'total': 59.0, 'female': 60.6, 'male': 57.6}
+2025-10-05 19:42:20 | INFO | Sent message to topic 'avg_csv': {'year': 1926, 'total': 56.7, 'female': 58.0, 'male': 55.5}
+2025-10-05 19:42:25 | INFO | Sent message to topic 'avg_csv': {'year': 1927, 'total': 60.4, 'female': 62.1, 'male': 59.0}
+2025-10-05 19:42:30 | INFO | Sent message to topic 'avg_csv': {'year': 1928, 'total': 56.8, 'female': 58.3, 'male': 55.6}
+2025-10-05 19:42:35 | INFO | Sent message to topic 'avg_csv': {'year': 1929, 'total': 57.1, 'female': 58.7, 'male': 55.8}
+2025-10-05 19:42:40 | INFO | Sent message to topic 'avg_csv': {'year': 1930, 'total': 59.7, 'female': 61.6, 'male': 58.1}
+2025-10-05 19:42:45 | INFO | Sent message to topic 'avg_csv': {'year': 1931, 'total': 61.1, 'female': 63.1, 'male': 59.4}
+2025-10-05 19:42:50 | INFO | Sent message to topic 'avg_csv': {'year': 1932, 'total': 62.1, 'female': 63.5, 'male': 61.0}
+2025-10-05 19:42:55 | INFO | Sent message to topic 'avg_csv': {'year': 1933, 'total': 63.3, 'female': 65.1, 'male': 61.7}
+2025-10-05 19:43:00 | INFO | Sent message to topic 'avg_csv': {'year': 1934, 'total': 61.1, 'female': 63.3, 'male': 59.3}
+2025-10-05 19:43:05 | INFO | Sent message to topic 'avg_csv': {'year': 1935, 'total': 61.7, 'female': 63.9, 'male': 59.9}
+2025-10-05 19:43:10 | INFO | Sent message to topic 'avg_csv': {'year': 1936, 'total': 58.5, 'female': 60.6, 'male': 56.6}
+2025-10-05 19:43:15 | INFO | Sent message to topic 'avg_csv': {'year': 1937, 'total': 60.0, 'female': 62.4, 'male': 58.0}
+2025-10-05 19:43:20 | INFO | Sent message to topic 'avg_csv': {'year': 1938, 'total': 63.5, 'female': 65.3, 'male': 61.9}
+2025-10-05 19:43:25 | INFO | Sent message to topic 'avg_csv': {'year': 1939, 'total': 63.7, 'female': 65.4, 'male': 62.1}
+2025-10-05 19:43:30 | INFO | Sent message to topic 'avg_csv': {'year': 1940, 'total': 62.9, 'female': 65.2, 'male': 60.8}
+2025-10-05 19:43:36 | INFO | Sent message to topic 'avg_csv': {'year': 1941, 'total': 64.8, 'female': 66.8, 'male': 63.1}
+2025-10-05 19:43:41 | INFO | Sent message to topic 'avg_csv': {'year': 1942, 'total': 66.2, 'female': 67.9, 'male': 64.7}
+2025-10-05 19:43:46 | INFO | Sent message to topic 'avg_csv': {'year': 1943, 'total': 63.3, 'female': 64.4, 'male': 62.4}
+2025-10-05 19:43:51 | INFO | Sent message to topic 'avg_csv': {'year': 1944, 'total': 65.2, 'female': 66.8, 'male': 63.6}
+2025-10-05 19:43:56 | INFO | Sent message to topic 'avg_csv': {'year': 1945, 'total': 65.9, 'female': 67.9, 'male': 63.6}
+2025-10-05 19:44:01 | INFO | Sent message to topic 'avg_csv': {'year': 1946, 'total': 66.7, 'female': 69.4, 'male': 64.4}
+2025-10-05 19:44:06 | INFO | Sent message to topic 'avg_csv': {'year': 1947, 'total': 66.8, 'female': 69.7, 'male': 64.4}
+2025-10-05 19:44:11 | INFO | Sent message to topic 'avg_csv': {'year': 1948, 'total': 67.2, 'female': 69.9, 'male': 64.6}
+2025-10-05 19:44:16 | INFO | Sent message to topic 'avg_csv': {'year': 1949, 'total': 68.0, 'female': 70.7, 'male': 65.2}
+2025-10-05 19:44:21 | INFO | Sent message to topic 'avg_csv': {'year': 1950, 'total': 68.2, 'female': 71.1, 'male': 65.6}
