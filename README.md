@@ -113,4 +113,4 @@ Gender Gap (Avg.): 3.2 years
 
 ## Dynamic Visualization Display
 
-![Average U.S. Life Expectancy](image.visualization.png)
+![Average U.S. Life Expectancy](images/visualization.png)
