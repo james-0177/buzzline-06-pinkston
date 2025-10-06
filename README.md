@@ -110,3 +110,7 @@ Gender Gap (Avg.): 3.2 years
 ⚠️  Significant drop(s) detected in year(s): 1904, 1910
 ==================================================
 ```
+
+## Dynamic Visualization Display
+
+![Average U.S. Life Expectancy](image.visualization.png)
